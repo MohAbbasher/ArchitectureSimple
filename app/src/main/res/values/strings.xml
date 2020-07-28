@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">ArchitectureSimple</string>
+    <string name="try_again">try again</string>
+  <string name="connection_error">connection error!</string>
+</resources>
