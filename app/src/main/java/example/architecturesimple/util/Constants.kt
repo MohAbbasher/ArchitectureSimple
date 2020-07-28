@@ -1,4 +1,4 @@
-package example.architecturesimple
+package example.architecturesimple.util
 
 object Constants {
 

@@ -5,8 +5,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
-import example.architecturesimple.MainRepository
-import example.architecturesimple.Response
+import example.architecturesimple.data.MainRepository
+import example.architecturesimple.util.Response
 import example.architecturesimple.data.User
 
 class MainViewModel @ViewModelInject constructor(private val repository: MainRepository) :

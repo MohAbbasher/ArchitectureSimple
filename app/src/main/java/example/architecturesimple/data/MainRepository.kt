@@ -1,7 +1,7 @@
-package example.architecturesimple
+package example.architecturesimple.data
 
 import androidx.lifecycle.liveData
-import example.architecturesimple.data.ApiService
+import example.architecturesimple.util.Response
 import kotlinx.coroutines.Dispatchers
 import javax.inject.Inject
 

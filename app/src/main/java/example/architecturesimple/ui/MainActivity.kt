@@ -7,7 +7,7 @@ import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
-import example.architecturesimple.Response
+import example.architecturesimple.util.Response
 import example.architecturesimple.databinding.ActivityMainBinding
 
 @AndroidEntryPoint

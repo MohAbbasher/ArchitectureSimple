@@ -1,4 +1,4 @@
-package example.architecturesimple
+package example.architecturesimple.util
 
 data class Response<T>(var status: Status, var data: T?, val message: String?) {
 
