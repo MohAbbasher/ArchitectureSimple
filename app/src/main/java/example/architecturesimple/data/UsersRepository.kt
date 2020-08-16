@@ -5,14 +5,14 @@ import example.architecturesimple.util.Response
 import kotlinx.coroutines.Dispatchers
 import javax.inject.Inject
 
-class MainRepository @Inject constructor(
+class UsersRepository @Inject constructor(
     private val remote: ApiService
 ) {
 
     fun getUsersResponse() = liveData(Dispatchers.IO) {
         emit(Response.loading(data = null))
         try {
-            emit(Response.success(data = remote.getUser()))
+            emit(Response.success(data = remote.getUsers()))
 
         } catch (e: Exception) {
             emit(
@@ -23,5 +23,4 @@ class MainRepository @Inject constructor(
             )
         }
     }
-
 }

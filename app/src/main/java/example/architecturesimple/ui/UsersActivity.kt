@@ -11,9 +11,9 @@ import example.architecturesimple.util.Response
 import example.architecturesimple.databinding.ActivityMainBinding
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class UsersActivity : AppCompatActivity() {
 
-    private val viewModel: MainViewModel by viewModels()
+    private val viewModel: UsersViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

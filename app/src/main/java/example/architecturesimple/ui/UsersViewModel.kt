@@ -5,11 +5,11 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
-import example.architecturesimple.data.MainRepository
+import example.architecturesimple.data.UsersRepository
 import example.architecturesimple.util.Response
 import example.architecturesimple.data.User
 
-class MainViewModel @ViewModelInject constructor(private val repository: MainRepository) :
+class UsersViewModel @ViewModelInject constructor(private val repository: UsersRepository) :
     ViewModel() {
 
     private var usersFetched: MutableLiveData<Boolean?> =
@@ -22,7 +22,6 @@ class MainViewModel @ViewModelInject constructor(private val repository: MainRep
             usersFetched.switchMap {
                 repository.getUsersResponse()
             }
-
     }
 
     fun retryUsersFetch() {
