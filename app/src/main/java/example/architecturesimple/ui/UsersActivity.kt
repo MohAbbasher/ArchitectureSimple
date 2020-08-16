@@ -8,7 +8,7 @@ import androidx.lifecycle.Observer
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import example.architecturesimple.util.Response
-import example.architecturesimple.databinding.ActivityMainBinding
+import example.architecturesimple.databinding.ActivityUsersBinding
 
 @AndroidEntryPoint
 class UsersActivity : AppCompatActivity() {
@@ -18,7 +18,7 @@ class UsersActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val binding = ActivityMainBinding.inflate(layoutInflater)
+        val binding = ActivityUsersBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val userAdapter = UserAdapter()
@@ -34,7 +34,7 @@ class UsersActivity : AppCompatActivity() {
     }
 
     private fun subscribeUI(
-        binding: ActivityMainBinding,
+        binding: ActivityUsersBinding,
         userAdapter: UserAdapter
     ) {
         viewModel.usersResponse.observe(this, Observer { response ->
